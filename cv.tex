@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text, Scale=MatchLowercase}
+\setmainfont{Adobe Caslon Pro}
+\setmonofont{Inconsolata}
+
+\usepackage[letterpaper, margin=1.25in]{geometry}
+
+\usepackage{hyperref}
+
+\usepackage{sectsty}
+\sectionfont{\mdseries\Large}
+
+\usepackage{enumitem}
+\newlist{years}{description}{1}
+\setlist[years]{format=\mdseries\addfontfeatures{Scale=.86, Numbers=OldStyle},
+  align=right, labelindent=-4.45em, itemindent=0pt, labelwidth=4em,
+  leftmargin=!, itemsep=0pt}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+{\LARGE Abhishek Sarkar\vspace{1em}}\\
+Ashdown House, Room 3114A\\
+235 Albany St.\\
+Cambridge, MA 02139\vspace{1em}
+
+(919) 259-1733\vspace{1em}
+
+\url{aksarkar@mit.edu}\\
+\url{http://www.mit.edu/aksarkar/www}
+
+\section*{Education}
+\begin{description}
+\item[Massachusetts Institute of Technology] Ph.D.\ Computer Science (in
+  progress)
+\item[University of North Carolina at Chapel Hill] B.S.\ Computer Science, 2011
+\end{description}
+
+\section*{Honors}
+\begin{years}
+\item[2011] NSF Graduate Research Fellow
+\item[2011] Honorable Mention, CRA Outstanding Undergraduate Researcher Awards
+\item[2011] Inducted into Phi Beta Kappa honors fraternity
+\item[2007--2011] UNC Dean's List
+\item[2007] National Merit Scholarship
+\end{years}
+
+\section*{Professional experience}
+\begin{years}[itemsep=1em]
+\item[2011--] \textbf{Massachusetts Institute of Technology}\\
+Research Assistant\\
+Computational Biology Group\\
+Computer Science and Artificial Intelligence Lab
+
+\item[2008--2011] \textbf{University of North Carolina at Chapel Hill}\\
+Undergraduate Research Assistant\\
+Computational Genetics Working Group
+\end{years}
+
+\section*{Peer-reviewed publications}
+\begin{enumerate}[labelindent=-2.45em, itemindent=0pt, leftmargin=!]
+\item David L. Aylor, \ldots, \textbf{Abhishek Sarkar} (29/41), \ldots, Gary A.
+  Churchill. ``Genetic Analysis of Complex Traits in the Emerging Collaborative
+  Cross.'' \emph{Genome Research}. 2011; 21(8):1213-22.
+
+\item Qi Zhang, Yi Liu, \textbf{Abhishek Sarkar}, Wei Wang. ``Split-Order
+  Distance for Clustering and Classification Hierarchies.'' \emph{Proceedings
+    of the 21st International Conference on Scientific and Statistical Database
+    Management}, New Orleans, LA, USA. Springer-Verlag, 2009. 517–534.
+\end{enumerate}
+\end{document}
