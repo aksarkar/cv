@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text, Scale=MatchLowercase}
+\setmainfont{Minion Pro}
+\setmonofont{Consolas}
+\usepackage[letterpaper, textwidth=6in, textheight=9in]{geometry}
+\usepackage{hyperref}
+\usepackage{sectsty}
+\sectionfont{\large}
+
+\usepackage{enumitem}
+% Lists with hanging indents
+\newlist{hdesc}{description}{1}
+\setlist[hdesc]{format=\small\mdseries\scshape, align=right,
+  labelindent=-4.5em, itemindent=0pt, labelwidth=4em, leftmargin=!,
+  itemsep=0pt}
+\newlist{henum}{enumerate}{1}
+\setlist[henum]{label=\arabic*., labelwidth=4em, labelindent=0em,
+  itemindent=0pt, leftmargin=!, itemsep=0pt}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\begin{document}
+{\LARGE Abhishek Sarkar\vspace{1em}}\\
+Stata Center 32-D526\\
+32 Vassar Street\\
+Cambridge, MA 02139\vspace{1em}
+
+\begin{hdesc}
+\item[email] \url{aksarkar@mit.edu}
+\item[phone] (919) 259-1733
+\item[github] \url{https://www.github.com/aksarkar}
+\item[url] \url{http://mit.edu/aksarkar}
+\end{hdesc}
+
+\section*{Education}
+\begin{hdesc}
+\item[2017] Ph.D.\ Computer Science, Massachusetts Institute of Technology
+  (expected)
+\item[2013] M.S.\ Computer Science, Massachusetts Institute of Technology
+\item[2011] B.S.\ Computer Science with Highest Honors, University of North
+  Carolina at Chapel Hill
+\end{hdesc}
+
+\section*{Research experience}
+\begin{hdesc}[itemsep=1em]
+\item[2011--] \textbf{Massachusetts Institute of Technology}\\
+Research Assistant\\
+Computational Biology Group, Manolis Kellis (PI)\\
+Computer Science and Artificial Intelligence Lab
+\end{hdesc}
+
+Developed methods to interpret non-coding variation in complex traits by
+identifying relevant epigenomic annotations, specific regulatory elements,
+their downstream target genes, and their upstream regulators (Sarkar et al.,
+BiorXiv 2016; Roadmap Epigenomics Consortium, Nature 2015)\\
+
+Developed an approximate Bayesian inference algorithm using Stochastic
+Gradient Variational Bayes and active sampling to estimate hyperparameters
+and perform variable selection in large scale biological regression problems
+(Sarkar et al., in preparation)\\
+
+Collaborated on a new model for multi-tissue eQTL mapping which improves power
+to detect brain-specific genes associated with psychiatric disorders (Park*,
+Sarkar*, et al., BiorXiv 2017; equal contribution)\\
+
+Collaborated on a new model for incorporating uncertainty of predicted
+expression in Transcriptome-wide Association Studies, improving power to
+detect genes associated with seven diseases (Bhutani*, Sarkar*, et al., in
+preparation; equal contribution)
+\end{itemize}
+
+\section*{Industry Experience}
+\begin{hdesc}
+\item[2010] \textbf{Expression Analysis, Inc.}\\
+  Summer intern
+\end{hdesc}
+
+Developed software to efficiently perform principal components analysis,
+correct for technical confounders, and perform GWAS for SNPs and CNVs jointly
+from array intensities directly.
+
+\section*{Skills}
+\begin{itemize}
+\item Python, Theano, R, bash
+\item Linux, DRMAA (Platform LSF, Univa Grid Engine, Portable Batch System)
+\end{itemize}
+
+\end{document}
