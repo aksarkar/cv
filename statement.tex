@@ -1,0 +1,186 @@
+% Created 2017-01-16 Mon 19:22
+% Intended LaTeX compiler: xelatex
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\usepackage{xunicode}
+\usepackage[backend=biber,date=year,defernumbers=true,doi=false,isbn=false,style=nature,url=false]{biblatex}
+\usepackage{tikz}
+\usepackage[xetex]{hyperref}
+\usepackage{rotating}
+\usepackage{parskip}
+\usepackage[letterpaper,margin=1in]{geometry}
+\renewcommand\cite{\supercite}
+\addbibresource{/home/asarkar/research/mit/reading/reading.bib}
+\setmainfont[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]{texgyrepagella}
+\setmathfont[bold-style=TeX]{texgyrepagella-math.otf}
+\date{}
+\title{Abhishek Sarkar research statement}
+\hypersetup{
+ pdfauthor={Abhishek Sarkar},
+ pdftitle={Abhishek Sarkar research statement},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.1.1 (Org mode 9.0.3)}, 
+ pdflang={English}}
+\begin{document}
+
+\begin{center}
+  \large\bfseries\makeatletter\@title\makeatother
+\end{center}
+
+My career goal is to address one of the most important questions in human
+genetics: the mechanistic basis by which genetic variation causes human
+diseases. I have been an active member of the field over the last 10 years, and
+I have watched it transform from a field where genome-wide association studies
+(GWAS) of hundreds of individuals would identify a handful of genetic loci and
+make scientific headlines, to an incredibly collaborative field which has
+discovered tens of thousands of genetic associations over hundreds of diseases,
+and is moving towards studying millions of individuals.
+
+However, I have also felt the disappointment in the field that hundreds of new
+genetic loci have only opened up hundreds of new questions, of which only a
+handful have been answered by extensive experimentation, rather than leading
+directly to mechanistic insights and new therapeutics. The vast majority of
+disease loci fall in non-coding regions and elucidating their functional role
+in human disease is an unsolved challenge. Even for protein-coding
+associations, identifying the causal variant and understanding where and how
+the disrupted gene acts is still a challenge. But for non-coding associations,
+we don't know the target gene, let alone the causal variant, the cell type in
+which it acts, the regulators that control it, the effect on the target gene,
+or the intermediate phenotypes which mediate its effect on the observed
+phenotype. Moreover, the field is increasingly recognizing that many human
+diseases are highly polygenic, involving many yet uncharacterized loci which
+even the largest meta-analyses to date are under-powered to detect. However,
+this observation only makes interpreting the role of genetic variation in human
+disease more difficult, as smaller individual effects become detectable only in
+aggregate over biological pathways.
+
+My goal is to address these challenges on two fronts. First, I aim to gain
+insight into the non-coding genome, the role it plays in epigenetic and
+transcriptional regulation, and ultimately how non-coding genetic variation
+contributes to human disease. Second, I aim to develop new computational
+methods to probe these biological questions by jointly analyzing diverse data
+such as GWAS, epigenomic profiles, regulatory circuits, gene expression, and
+intermediate phenotypes in order to elucidate the mechanistic basis and
+gene-regulatory architecture of human disease.
+
+With the Roadmap Epigenomics Consortium, I developed methods to yield new
+biological insights into the mechanistic role of non-coding variation in
+disease. My methods combined summary statistics for eight diseases spanning
+psychiatric, autoimmune, and metabolic disorders with the most comprehensive
+set of epigenomic maps of regulatory regions across 127 human tissues and cell
+types, regulatory motifs of 651 transcription factors, and thousands of gene
+pathways. I went beyond state-of-the-art methods to identify specific genetic
+variants, the cellular context in which they were functional, the upstream
+regulator whose binding they disrupt, and the downstream gene whose expression
+they regulate. My analysis revealed the role of immune-specific regulatory
+regions in psychiatric disorders, identified shared master regulators between
+psychiatric and auto-immune disorders, highlighted the importance of
+constitutive enhancers active in all cell types, and implicated specific
+biological processes for experimental followup.
+
+I have applied my methods to other diverse studies in collaboration with GWAS
+consortia and industry partners. With the Reproductive Genetics Consortium, I
+applied my methods to studies of age to menarche, revealing new genes
+previously not implicated in the phenotype, and to age at menopause, revealing
+a role for immune response in the phenotype previously studied but rejected by
+the field. I am currently working in collaboration with the GWAS group of the
+ENCODE Consortium, the GWAS of Sequencing of Alcohol and Nicotine use
+consortium, the Psychiatric Genetics Consortium (PGC), and Pfizer to apply my
+methods to study an even larger range of phenotypes.
+
+These studies have laid the foundation for research directions and projects I
+am interested in pursuing. First, I want to understand the genetic architecture
+of complex traits, especially human disease. Specifically, I aim to develop
+methods which can estimate the number of causal variants, give insight into
+where those causal variants can be found in the human genome, and motivate new
+designs for future human genetic studies. I am currently making progress along
+these lines, developing a new method to combine GWAS data with regulatory
+regions predicted using epigenomic annotations. My immediate goal is to
+distinguish between non-infinitesimal genetic architectures where regulatory
+regions harbor more causal variants for disease from architectures where causal
+variants are distributed uniformly. In order to do so, I have extended
+state-of-the-art large-scale Bayesian sparse regression models to identify and
+avoid degenerate solutions, scale to biobank-scale data sets of hundreds of
+thousands of individuals, and validate their robustness to violation of the
+model assumptions. 
+
+Currently, one research question I aim to investigate using my method is
+explaining recent contradictory results on the role of immune cell types in
+schizophrenia. A number of methods have been proposed to study enrichment of
+disease associations in regulatory regions; however, only some of these methods
+find enrichment in immune-specific regulatory regions. Using a model-based
+approach, I aim to infer the gene regulatory architecture of schizophrenia in
+collaboration with the PGC which could explain why different methods which
+study fundamentally different quantities (the number of associations
+overlapping regulatory elements versus the proportion of phenotype variance
+they explain) give contradictory results.
+
+Second, I want to build mechanistic understanding of the transcriptional
+regulatory network incorporating additional information such as epigenomic
+profiles and chromatin structure. One of the key challenges I aim to address is
+understanding how expression quantitative trait loci (eQTLs) vary across
+tissues, and explaining those differences using epigenomic and regulatory
+network contexts. I am currently making some progress along these lines in
+joint work with Yongjin Park at MIT, developing a new method to jointly map
+eQTLs in multiple tissues by factorizing to deconvolve SNP-specific effects and
+tissue-specific effects. The fundamental insight which I aim to capture is that
+the effect of an eQTL on target gene expression can be deconvolved into a
+genetic effect on a regulatory motif (changing the binding affinity for an
+upstream transcription factor), a tissue effect on local epigenetic state
+(changing chromatin accessibility or histone modification to create or
+deactivate enhancer elements), and a tissue effect on the upstream regulator
+(changing the gene expression of the upstream regulator).
+
+There is a pressing need to distinguish between different modes of
+tissue-specific gene regulatory action in order to accurately predict the role
+of genetic variation on transcriptional regulation, and through regulation on
+disease phenotypes. However, in order to truly deconvolve these effects, we
+need to build more complex models incorporating not only genotype and gene
+expression profiles, but also sequence-based regulatory potential (especially
+regulatory motifs) and epigenomic profiles in matched or similar cell types.
+These models will require not only existing large-scale data sets, but also
+more comprehensive data in relevant cell types, additional developmental time
+points, and across multiple individuals to more exactly pinpoint the tissue and
+mechanism of action and new algorithms to efficiently perform the statistical
+inference.
+
+Third, I want to study the impact of inter-individual variation in intermediate
+phenotypes such as histone modification, chromatin accessibility, DNA
+methylation, and gene expression on human disease. I have already made some
+progress in this direction. In joint work with Kunal Bhutani at UCSD, I
+contributed to a new method for error modeling in transcriptome-wide
+association studies (TWAS). TWAS exploits reference gene expression profiles,
+generated by large-scale efforts such as the Gene Tissue Expression Project, to
+impute unobserved gene expression into large-scale GWAS cohorts and associate
+inter-individual changes in gene expression with disease, directly implicating
+new genes. In collaboration with Yongjin Park at MIT, I am contributing to new
+efficient approximate methods to incorporate epigenetic regulation through
+methylation in TWAS, and more generally to model multiple levels of mediation
+through intermediate phenotypes. Moving forward, the key area I am interested
+in is generating or imputing new data to jointly study case-control differences
+in multiple gene regulatory phenotypes and other disease endophenotypes.
+
+Fourth, I want to address a fundamental shortcoming in state-of-the-art methods
+to analyze genomic, epigenomic, transcriptomic, and phenotypic data: accounting
+for error and uncertainty in predictions of regulatory elements and regulatory
+networks. Accounting for uncertainty in a principled manner necessitates
+building larger integrative models combining diverse data types, new methods to
+relax assumptions, and new implementations to efficiently analyze the data. The
+field is increasingly recognizing the value of epigenomic annotations to
+interpret the role of genetic variation in the context of transcriptional
+regulation; however, our use of these annotations is dependent on computational
+models with unknown error rates and predictions without corresponding error
+estimates. To address these issues, I aim to learn deep generative models for
+epigenomic annotations, and incorporate these generative models as subunits
+into larger generative models for disease. In my current work, I have worked on
+such a generative regression model for disease which assumes regulatory
+annotation data is observed, but can be easily extended to sample regulatory
+annotations from the posterior distribution of a separately trained generative
+model.
+\end{document}
